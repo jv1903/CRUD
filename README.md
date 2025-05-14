@@ -1,6 +1,15 @@
 > Objetivo da tarefa: Aplicar os conhecimentos adquiridos sobre desenvolvimento full stack, integrando frontend, backend e banco de dados, utilizando comandos SQL e conexões de banco a partir do arquivo fornecido pelo professor.
 <br>
+📄 Descrição do Projeto
+Este é um projeto simples de aprendizado com foco na integração entre frontend (HTML/CSS), backend (PHP) e banco de dados (MySQL). O sistema foi desenvolvido com base no modelo de banco de dados fornecido pelo professor, incluindo tabelas e relacionamentos pré-definidos.
+
+O objetivo principal é praticar e aplicar os conceitos de um sistema completo com funcionalidades de CRUD (Create, Read, Update, Delete), permitindo a inserção, visualização, atualização e exclusão de dados por meio de uma interface web amigável.
+
+Além disso, o projeto integra todos os componentes essenciais: interface do usuário (frontend), lógica de negócio (backend) e persistência de dados (banco de dados relacional).
+<br>
+
 🛠 Tecnologias Utilizadas
+
 ◾ HTML5 – Estruturação das páginas.
 
 ◾ CSS3 – Estilização básica das páginas.
