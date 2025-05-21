@@ -3,7 +3,7 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "";
-$banco = "especies";
+$banco = "meubanco";
 
 // objeto que controla a conexao com o banco
 $conn = new mysqli($host, $usuario, $senha, $banco);
