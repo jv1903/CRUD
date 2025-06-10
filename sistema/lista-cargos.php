@@ -1,55 +1,49 @@
-<?php
-// includes dos arquivos
+<?php 
+// include dos arquivox
+include_once './include/logado.php';
 include_once './include/conexao.php';
 include_once './include/header.php';
- 
-// Consulta ao banco de dados para trazer os cargos
-$sql = "SELECT * FROM cargos";
-$resultado = $conn->query($sql);
 ?>
- 
-<main>
-  <div class="container">
-      <h1>Lista de Cargos</h1>
-      <a href="salvar-cargos.php" class="btn btn-add">Incluir</a>
-     
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Teto Salarial</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php
-          // Exibe os dados de cada cargo do banco
-          while ($dado = $resultado->fetch_assoc()) {
-           
- 
-          ?>
-          <tr>
-            <td><?php echo $dado['CargoID']; ?></td>
-            <td><?php echo $dado['Nome']; ?></td>
-            <td>R$ <?php echo number_format($dado['TetoSalarial'], 2, ',', '.'); ?></td>
-            <td>
- 
-              <a href="salvar-cargos.php?id=<?php echo $dado['CargoID']; ?>" class="btn btn-edit">Editar</a>
-             
-           
-              <a href="excluir-cargos.php?id=<?php echo $dado['CargoID']; ?>" class="btn btn-delete">Excluir</a>
-            </td>
-          </tr>
-          <?php
-          }
-          ?>
-        </tbody>
-      </table>
-    </div>
-</main>
- 
-<?php
-// include dos arquivos
-include_once './include/footer.php';
-?>
+  <main>
+
+    <div class="container">
+        <h1>Lista de Cargos</h1>
+        <a href="./salvar-cargos.php" class="btn btn-add">Incluir</a>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Teto Salárial</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Dado A</td>
+              <td>100</td>
+              <td>
+                <a href="#" class="btn btn-edit">Editar</a>
+                <a href="#" class="btn btn-delete">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Dado B</td>
+              <td>250</td>
+              <td>
+                <a href="#" class="btn btn-edit">Editar</a>
+                <a href="#" class="btn btn-delete">Excluir</a>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div> 
+  </main>
+  
+  <?php 
+  // include dos arquivox
+  include_once './include/footer.php';
+  ?>

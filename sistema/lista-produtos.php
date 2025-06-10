@@ -3,8 +3,6 @@
 include_once './include/logado.php';
 include_once './include/conexao.php';
 include_once './include/header.php';
-$sql = "SELECT * FROM produtos";
-$resultado = $conn->query($sql);
 ?>
 
 <main>
@@ -23,26 +21,26 @@ $resultado = $conn->query($sql);
           </tr>
         </thead>
         <tbody>
-        <?php
-          
-          while ($dado = $resultado->fetch_assoc()){
-          ?>
-<tr>
-<td><?php echo $dado['ProdutoID']; ?></td>
-<td><?php echo $dado['Nome']; ?></td>
-<td><?php echo $dado['CategoriaID']; ?></td>
-<td>R$ <?php echo number_format($dado ['Preco'],2,',','.'); ?></td>
-
-<td>
-
-<a href="editar-produto.php?id=<?php echo $dado['ProdutoID']; ?>" class="btn btn-edit">Editar</a>
-
-<a href="excluir-produto.php?id=<?php echo $dado['ProdutoID']; ?>" class="btn btn-delete">Excluir</a>
-</td>
-</tr>
-<?php
-          }
-          ?>
+          <tr>
+            <td>1</td>
+            <td>Produto A</td>
+            <td>Categoria A</td>
+            <td>R$ 10,00</td>
+            <td>
+              <a href="#" class="btn btn-edit">Editar</a>
+              <a href="#" class="btn btn-delete">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Produto B</td>
+            <td>Categoria B</td>
+            <td>R$ 20,00</td>
+            <td>
+              <a href="#" class="btn btn-edit">Editar</a>
+              <a href="#" class="btn btn-delete">Excluir</a>
+            </td>
+          </tr>
 
         </tbody>
       </table>
