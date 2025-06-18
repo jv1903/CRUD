@@ -1,4 +1,3 @@
-@ -1 +1,20 @@
 > Objetivo da tarefa: Aplicar os conhecimentos adquiridos sobre desenvolvimento full stack, integrando frontend, backend e banco de dados, utilizando comandos SQL e conexões de banco a partir do arquivo fornecido pelo professor.
 <br>
 🛠 Tecnologias Utilizadas
